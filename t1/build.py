@@ -14,9 +14,9 @@ args = parser.parse_args()
 
 print("args:"+str(vars(args)))
 if args.clean:
-    print("begin clean project...")
     os.system("rm -rf " + build_dir)
     os.system("rm -rf " + cmakefile_dir)
+    print("clean finish!")
 else:
     print("Begin Building...")
     print("current Path:"+ curdir)
